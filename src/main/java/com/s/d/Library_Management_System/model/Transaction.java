@@ -22,9 +22,9 @@ import java.util.UUID;
 public class Transaction {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Transaction_ID",updatable = false)
-    private UUID id;
+    private int id;
 
     @Column(name = "transaction_date",nullable = false,updatable = false)
     @CreationTimestamp

@@ -17,7 +17,7 @@ public class TransactionDto {
 
     private LocalDate dueDate;
 
-    private UUID cardId;
+    private int cardId;
 
-    private UUID bookId;
+    private int bookId;
 }

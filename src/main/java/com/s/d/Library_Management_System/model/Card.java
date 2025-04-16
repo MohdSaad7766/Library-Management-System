@@ -23,9 +23,9 @@ import java.util.UUID;
 @Table(name = "Cards")
 public class Card {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "Card_ID")
-    private UUID id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "Card_ID",updatable = false)
+    private int id;
 
     @Column(name = "card_status",nullable = false)
     @Enumerated(value = EnumType.STRING)

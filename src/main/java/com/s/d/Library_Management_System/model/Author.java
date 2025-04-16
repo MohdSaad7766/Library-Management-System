@@ -18,9 +18,9 @@ import java.util.UUID;
 @Table(name = "Authers")
 public class Author {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Auther_ID",updatable = false)
-    private UUID id;
+    private int id;
 
     @Column(name = "name",nullable = false)
     private String name;

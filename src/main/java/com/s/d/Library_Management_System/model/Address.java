@@ -16,9 +16,9 @@ import java.util.UUID;
 public class Address {
 //    id,houseNo,street,city,state,pincode
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Address_ID",updatable = false)
-    private UUID id;
+    private int id;
 
     @Column(name = "house_no",nullable = false)
     private int houseNo;

@@ -22,8 +22,8 @@ import java.util.UUID;
 public class Book {
     @Id
     @Column(name = "Book_ID",updatable = false)
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
     @Column(name = "title",nullable = false)
     private String title;

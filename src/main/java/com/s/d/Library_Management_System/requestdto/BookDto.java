@@ -39,5 +39,5 @@ public class BookDto {
 
 //    private int availableQuantity;
 
-    private UUID authorId;
+    private int authorId;
 }

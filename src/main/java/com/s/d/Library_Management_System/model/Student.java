@@ -22,9 +22,9 @@ import java.util.UUID;
 @Table(name = "students")
 public class Student {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Student_ID", updatable = false)
-    private UUID id;
+    private int id;
 
     @Column(name = "name", nullable = false)
     private String name;

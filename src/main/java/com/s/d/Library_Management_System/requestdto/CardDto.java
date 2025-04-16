@@ -15,6 +15,6 @@ import java.util.UUID;
 public class CardDto {
     private CardStatus cardStatus;
 
-    private UUID studentId;
+    private int studentId;
 
 }
